@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head id="" data-template-set="html5-reset">
+	<title>Real Rap (Megazetz Remix) </title>
+	<meta name="author" content="CuongZ">
+    <meta name="copyright" content="CuongZ">
+<meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1">
+<!-- Open Sans -->
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css" />
+
+<!-- FontAwesome Icon Pack -->
+<link rel="stylesheet" type="text/css" media="screen" href="cuongz-player/packages/font-awesome/css/font-awesome.min.css" />
+
+<!-- Main Stylesheet -->
+<link rel="stylesheet" type="text/css" media="screen" href="cuongz-player/css/html5-video-player.min.css" />
+
+<!-- jQuery -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<!-- Main Javascript -->
+<script type="text/javascript" src="cuongz-player/js/html5-video-player.jquery.min.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			$('#myVideo').html5_video({
+				source : {
+					"video/mp4"  : "videos/realrap.mp4",
+				},
+				title: 					'Real Rap (Megazetz Remix)',
+				color: 					'#001100',
+				width: 					false,
+				poster: 				'poster.png',
+				buffering_text: 		'Đang tải',
+				autoplay: 				false,
+				play_control: 			true,
+				time_indicator: 		true,
+				volume_control: 		true,
+				share_control: 			true,
+				fullscreen_control: 	true,
+				dblclick_fullscreen: 	true,
+
+				volume: 				0.7,
+
+				show_controls_on_load: 	true,
+				show_controls_on_pause: true,
+				// Callbacks
+				on_play: 		function() {
+					$(".callback").html('');
+				},
+				on_pause: 		function() {
+					$(".callback").html('');
+				},
+				on_stop: 		function() {
+					$(".callback").html('');
+				},
+				on_seek: 		function(seconds) {
+					$(".callback").html('');
+				},
+				on_volume: 		function(volume) {
+					$(".callback").html('');
+				},
+			});
+		});
+	</script>
+</head>
+<body background="background.bmp">
+	<div style="max-width: 854px; margin: 0 auto;">
+
+		<div id="myVideo"></div>
+
+		<h2></h2>
+
+		<p><strong></strong><span class="callback"></span><br /><strong></strong><span class="time"></span></p>
+		<p>
+
+		</p>
+
+		<br />
+		<p>
+		</p>
+	</div>
+</body>
+</html>
