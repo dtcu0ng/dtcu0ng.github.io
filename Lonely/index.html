@@ -27,9 +27,8 @@ Edited: Vy Nghia
 <body>
 	<!-- MUSIC -->
 	<audio autoplay="autopaly">
-		<source src="music/sorry.mp3" type="audio/mp3">
+		<source src="music/waitingforlove.mp3" type="audio/mp3">
 	</audio>
-
 	<div id="mainDiv">
 
 		<!--- TEXT [EDIT ONLY] -->
@@ -53,10 +52,10 @@ Edited: Vy Nghia
 					<span class="keyword">try</span>{<br>
 					<span class="placeholder"><span class="keyword">while</span> (<span class="keyword">true</span>) {<br>
 					<span class="placeholder"><span class="placeholder"><span class="keyword">switch</span>( u-&gt;statu() ){<br>
-							<span class="placeholder"><span class="placeholder"><span class="keyword">case</span><span class="string">"nhìn trộm"</span>: i-&gt;feed(u);break; <br>
-					<span class="placeholder"><span class="placeholder"><span class="keyword">case</span><span class="string">"nhớ thầm"</span>: i-&gt;hug(u);break; <br>
-					<span class="placeholder"><span class="placeholder"><span class="keyword">case</span><span class="string">"không thể nói ra..."</span>: i-&gt;sleep(u);break; <br>
-					<span class="placeholder"><span class="placeholder"><span class="keyword">default</span>: i-&gt;say(u,<span class="string">"Tao thích mày"</span>);break; <br>
+							<span class="placeholder"><span class="placeholder"><span class="keyword">case</span><span class="string">"nhìn trộm"</span>: i-&gt;look(u);break; <br>
+					<span class="placeholder"><span class="placeholder"><span class="keyword">case</span><span class="string">"nhớ thầm"</span>: i-&gt;remember(u);break; <br>
+					<span class="placeholder"><span class="placeholder"><span class="keyword">case</span><span class="string">"không thể nói ra..."</span>: i-&gt;canttalk(u);break; <br>
+					<span class="placeholder"><span class="placeholder"><span class="keyword">default</span>: i-&gt;scream(u,<span class="string">"Tao thích mày!"</span>);break; <br>
 					<span class="placeholder"><span class="placeholder">}<br>
 					<span class="placeholder">}<br>
 				}<br>
@@ -71,7 +70,7 @@ Edited: Vy Nghia
 				<canvas id="garden" width="670" height="625"></canvas>
 				<div id="words">
 					<div id="messages">
-						&nbsp;&nbsp;Anh đã chờ em &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;Đã &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<br> chờ em trong<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -80,7 +79,7 @@ Edited: Vy Nghia
 					</div>
 
 					<div id="loveu">
-						Sống trong cô đơn.<br>
+						Tớ thích cậu.<br>
 						<div class="signature">- CuongZ</div>
 					</div>
 				</div>
@@ -98,7 +97,7 @@ Edited: Vy Nghia
 		var offsetX = $("#loveHeart").width() / 2;
 		var offsetY = $("#loveHeart").height() / 2 - 55;
 		var nolovetime = new Date();
-		nolovetime.setFullYear(2005, 9, 1); // (years, month, days)
+		nolovetime.setFullYear(2017, 11, 17); // (years, month, days)
 		nolovetime.setHours(0);
 		nolovetime.setMinutes(0);
 		nolovetime.setSeconds(0);
