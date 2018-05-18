@@ -1,0 +1,43 @@
+<!--Version 1.1--->
+<!--Re-developed by CuongZ--->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Extension</title>
+<!--Gọi về bộ thư viện CSS-->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/components.css" rel="stylesheet" type="text/css" />
+<!--Gọi về bộ thư viện CSS-->
+</head>
+<body style="padding-top: 50px;">
+	<center><img src="icon.png" alt="facebook fb-icon" width="80" height="80"></center>
+		<form style="padding: 20px; width: 620px">
+		<div class="container">
+			<div class="panel panel-primary">
+				<div class="panel-heading" id="fb">Thay đổi quyền riêng tư tất cả bài viết của bạn trên Facebook! </div>
+				<div class="panel-body">
+					<select id="option" class="form-control">
+						<option selected="" value="EVERYONE">Thay đổi thành Mọi người</option>
+						<option value="ALL_FRIENDS">Thay đổi thành Bạn bè</option>
+						<option value="FRIENDS_OF_FRIENDS">Thay đổi thành Bạn của bạn bè</option>
+						<option value="SELF">Thay đổi thành Chỉ mình tôi</option>
+					</select>
+					<br>
+					<p></p>
+						<input class="form-control" placeholder="Nhập access_token của bạn vào đây" id="token" required autocomplete="off">
+						<br>
+					  	<center><button type="button" class="btn btn-outline-warning" id="change">Thay đổi</button></center>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="copyright">
+			<center><p> (c)2018 <a href="http://cuongz.me">CuongZ</a>. Source code: Loc Mai</p></center>
+		</div>
+	</form>
+	</body>
+
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="popup.js"></script>
+</html>
