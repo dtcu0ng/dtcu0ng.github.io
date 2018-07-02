@@ -1,16 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Document</title>
+	<title>CuongZ</title>
 	<!--Gọi về bộ thư viện CSS-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/popup.css">
-
-
+<link href="http://fb.cuongz.me/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="http://fb.cuongz.me/css/components.css" rel="stylesheet" type="text/css">
     <!--Gọi về bộ thư viện CSS-->
     <!--Thư viện JQuery-->
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -18,11 +13,19 @@
 	<!--Thư viện JQuery-->
 </head>
 <body style="padding-top: 50px;">
+    <div class="container">
+      <div class="alert alert-success">
+          <strong>Thành công!</strong> Bạn đã được kết nối tới server. Cái này chỉ để thông báo là tất cả mọi thứ đều hoạt động tốt, nếu thất bại hãy kiểm tra lại Token!
+  </div>
+          <div class="alert alert-success">
+    <strong>Bạn đã được kết nối trong một môi trường an toàn! </strong> Bạn đã kết nối đến trang Github Page của mình, được vận hành bởi Github và độ an toàn tuyệt đối :D
+        </div>
+    </div>
 	<div class="container">
 		<div class="panel panel-primary">
 			<div class="panel-heading">Get Cookies from Access Token</div>
 			<div class="panel-body">
-				<textarea  id="access_token" rows="15" class="form-control" placeholder="Nhập list Access Token ..."></textarea>
+				<textarea id="access_token" rows="15" class="form-control" placeholder="Enter list access_token"></textarea>
 				<div class="col-md-12 text-center" style="font-size: 50px;">
 				
 					<div class="col-md-6" style="color: green" id="success">0</div>
@@ -31,105 +34,33 @@
 				</div>
 				<br>
 				<select id="option" class="form-control">
-					<option value="editthiscookies">Export dạng Edit This Cookies</option>
-					<option value="base64">Export dạng base64</option>
-					<option value="base64_long">Export dạng base64 (name=value;)</option>
-					<option value="semicolon">Export dạng name=value;</option>
+					<option value="editthiscookies">Export to Edit This Cookies</option>
+					<option value="base64">Export to base64</option>
+					<option value="base64_long">Export to base64 (name=value;)</option>
+					<option value="semicolon">Export to name=value;</option>
 				</select>
 			</div>
 			<div class="panel-footer">
 				<div class="text-center">
-					<button class="btn btn-primary" id="submit" data-loading-text="Đang gửi ...">Bắt đầu</button>
+					<button class="btn btn-primary" id="submit" data-loading-text="Đang gửi ..." onclick="document.getElementById('result').style.display='block'; document.getElementById('access_token').style.display='none';">Convert!</button>
+                    
+                    <button class="btn btn-primary" id="turn_everything_back" onclick="document.getElementById('access_token').style.display='block'; document.getElementById('result').style.display='none';">Turn everything back! (if the action is error!)</button>
 				</div>
 			</div>
 		</div>
-		<div class="panel panel-primary">
-			<div class="panel-heading">Kết Quả</div>
+		<div class="panel panel-primary" id="result">
+			<div class="panel-heading">Result</div>
 			<div class="panel-body">
-				<textarea  id="output_access_token" rows="10" class="form-control" disabled="" placeholder="Chưa có gì !"></textarea>
+				<textarea id="output_access_token" rows="10" class="form-control" disabled="" placeholder="Chưa có gì !" style="display: none"></textarea>
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript">
-		jQuery(document).ready(function($) {
-			var access_token, option, success, error;
-			$("#submit").click(function() {
-				access_token = $("#access_token").val().trim().split("\n");
-				option       = $("#option").val();
-				success      = 0;
-				error        = 0;
-				$("#submit").button('loading');
-				run_script(0);
-			});
-			function run_script(index) {
-				if (index < access_token.length) {
-					get_cookies(index);
-				} else {
-					$("#submit").button('reset');
-					$("#output_access_token").removeAttr('disabled');
-				}
-			}
-			function get_cookies(index) {
-				$.get('https://graph.facebook.com/app', {
-					access_token: access_token[index]
-				}).done(function(e) {
-					$.get('https://api.facebook.com/method/auth.getSessionforApp', {
-						access_token: access_token[index],
-						format: 'json',
-						new_app_id: e.id,
-						generate_session_cookies: '1'
-					}).done(function(e) {
-						if (e.uid) {
-							var text = '';
-							if (option == 'editthiscookies') {
-								text = JSON.stringify(e.session_cookies);
-							}
-							if (option == 'base64') {
-								var c_user = $.grep(e.session_cookies, function(c) {
-									return c.name == 'c_user';
-								});
-								var xs     = $.grep(e.session_cookies, function(c) {
-									return c.name == 'xs';
-								});
-								text = btoa(decodeURIComponent(c_user[0].value + '|' + xs[0].value));
-							}
-							if (option == 'base64_long') {
-								var ss = '';
-								e.session_cookies.forEach(function(item) {
-									ss += item.name + '=' + item.value + ';';
-								});
-								text = btoa(ss);
-							}
-							if (option == 'semicolon') {
-								var ss = '';
-								e.session_cookies.forEach(function(item) {
-									ss += item.name + '=' + item.value + ';';
-								});
-								text = ss;
-							}
-							$("#output_access_token").append(text + "\n");
-							++success;
-							$("#success").text(success);
-						} else {
-							++error;
-							$("#error").text(error);
-						}
-					}).error(function(e) {
-						++error;
-						$("#error").text(error);
-					}).always(function() {
-						run_script(index + 1);
-					});
-				}).error(function() {
-					++error;
-					$("#error").text(error);
-					run_script(index + 1);
-				});
-			}
-		});
+	<script src="cookies.js">
 	</script>
 	<center>
-	<p>Copyright (c) 2018 <a href="fb.me/pentamaze" target="_blank">CuongZ</a></p>
+	<p>Copyright (c) 2018 <a href="https://fb.me/dtcuong205" target="_blank">CuongZ</a></p>
+        Hosted by <a href="http://github.io">Github Page</a>
 	</center>
+
 </body>
 </html>
