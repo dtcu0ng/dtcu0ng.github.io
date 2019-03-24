@@ -36,7 +36,7 @@ Edited: Vy Nghia
 			<div id="code" style="margin-top: 62.5px;">
 
 				Boy * i = <span class="keyword">new</span> Boy(<span class="string">"Cường"</span>);<br>
-				<span class="comments">// Chính là tao. </span><br>
+				<span class="comments">// Is me. </span><br>
 				Girl * u ;<br>
 				<span class="keyword">while</span> (true) {<br>
 				<span class="placeholder"><span class="keyword">try</span> {<br>
@@ -52,34 +52,32 @@ Edited: Vy Nghia
 					<span class="keyword">try</span>{<br>
 					<span class="placeholder"><span class="keyword">while</span> (<span class="keyword">true</span>) {<br>
 					<span class="placeholder"><span class="placeholder"><span class="keyword">switch</span>( u-&gt;statu() ){<br>
-							<span class="placeholder"><span class="placeholder"><span class="keyword">case</span><span class="string">"nhìn trộm"</span>: i-&gt;look(u);break; <br>
-					<span class="placeholder"><span class="placeholder"><span class="keyword">case</span><span class="string">"nhớ thầm"</span>: i-&gt;remember(u);break; <br>
-					<span class="placeholder"><span class="placeholder"><span class="keyword">case</span><span class="string">"không thể nói ra..."</span>: i-&gt;canttalk(u);break; <br>
-					<span class="placeholder"><span class="placeholder"><span class="keyword">default</span>: i-&gt;scream(u,<span class="string">"Tao thích mày!"</span>);break; <br>
+							<span class="placeholder"><span class="placeholder"><span class="keyword">case</span><span class="string">"look"</span>: i-&gt;look(u);break; <br>
+					<span class="placeholder"><span class="placeholder"><span class="keyword">case</span><span class="string">"remember"</span>: i-&gt;remember(u);break; <br>
+					<span class="placeholder"><span class="placeholder"><span class="keyword">case</span><span class="string">"can't talk"</span>: i-&gt;canttalk(u);break; <br>
+					<span class="placeholder"><span class="placeholder"><span class="keyword">default</span>: i-&gt;scream(u,<span class="string">"I love you!"</span>);break; <br>
 					<span class="placeholder"><span class="placeholder">}<br>
 					<span class="placeholder">}<br>
 				}<br>
 				<span class="keyword">catch</span>(MyCrush::DoNotLoveMe){ <br>
-				<span class="comments">// Một ngày nào đó, tao sẽ nhìn lại thông báo này.<br></span>
+				<span class="comments">// Someday, I will recode this project.<br></span>
 				<span class="placeholder">i-&gt;believeInLove (<span class="keyword">false</span>); <br>
-				<span class="placeholder"><span class="comments">// Tao sẽ không bao giờ tin vào tình yêu nào nữa... :))<br></span>
-				<span class="placeholder">sys.exit(-1); <span class="comments"><br>// ... cho đến khi nó được khởi động lại!</span><br>
+				<span class="placeholder"><span class="comments">// Do not believe in love anymore<br></span>
+				<span class="placeholder">sys.exit(-1); <span class="comments"><br>// ... until its restarted!</span><br>
 				}<br>
 			</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
 			<div id="loveHeart">
 				<canvas id="garden" width="670" height="625"></canvas>
 				<div id="words">
 					<div id="messages">
-						&nbsp;&nbsp;Đã &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<br> chờ em trong<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						Waiting for you in
+						<br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<br>
-						<div id="elapseClock">&nbsp;&nbsp;&nbsp;&nbsp;<span class="digit">333</span> ngày <span class="digit">17</span> giờ <span class="digit"><br>&nbsp;&nbsp;07</span> phút <span class="digit">33</span> giây</div>
+						<div id="elapseClock">&nbsp;&nbsp;&nbsp;&nbsp;<span class="digit">333</span> day <span class="digit">17</span> hour <span class="digit"><br>&nbsp;&nbsp;07</span> minutes <span class="digit">33</span> seconds</div>
 					</div>
 
 					<div id="loveu">
-						Tớ thích cậu.<br>
+						Thank you.<br>
 						<div class="signature">- CuongZ</div>
 					</div>
 				</div>
@@ -89,7 +87,7 @@ Edited: Vy Nghia
 
 		<!-- COPYRIGHT -->
 		<div style="text-align:center;margin:0px 0; font:normal 14px/24px 'MicroSoft YaHei';">
-		<p>© 2018 Vy Nghia, Edited by CuongZ</b></p>
+		<p>© CuongZ. All right reserved.</b></p>
 	</div>
 
 	<!-- Time & Canvas -->
@@ -97,7 +95,7 @@ Edited: Vy Nghia
 		var offsetX = $("#loveHeart").width() / 2;
 		var offsetY = $("#loveHeart").height() / 2 - 55;
 		var nolovetime = new Date();
-		nolovetime.setFullYear(2017, 11, 17); // (years, month, days)
+		nolovetime.setFullYear(, , ); // (years, month, days)
 		nolovetime.setHours(0);
 		nolovetime.setMinutes(0);
 		nolovetime.setSeconds(0);
