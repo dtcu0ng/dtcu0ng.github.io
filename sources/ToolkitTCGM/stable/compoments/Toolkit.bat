@@ -1,5 +1,5 @@
 color 3f
-title Tookit for Tencent Gaming Buddy - Version 2.0
+title Tookit for Tencent Gaming Buddy - Version 2.0 AUTOIT ( 3.0-alpha )
 mode 137,40
 cls
 @echo off
@@ -84,7 +84,7 @@ taskkill /F /IM nircmdc.exe
 cls
 @echo off
 echo  ////////////////////// Tookit for Tencent Gaming Buddy //////////////////////
-echo // (c) Made by CuongZ. Version 2.0                                           //
+echo // (c) Made by CuongZ. Version 2.0 AUTOIT ( 3.0-alpha )                      //
 echo // Github : https://github.com/CuongZ                                        //
 echo // Facebook : https://facebook.com/dtcuong0109                               //
 echo // Press any key to start!                                                   //
