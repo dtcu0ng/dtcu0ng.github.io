@@ -3,7 +3,7 @@ title Selector menu - Toolkit for Tencent Gaming Buddy
 cls
 @ECHO off
 echo Function menu - Toolkit for TCGM
-echo Build date: 2/7/2019  9:12PM
+echo Build date: 7/7/2019
 echo Source: https://github.com/CuongZ/ToolkitTCGM_OfficialBuild
 echo[
 echo -------------------------------------------
