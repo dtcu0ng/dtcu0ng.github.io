@@ -154,7 +154,7 @@ echo Facebook : https://facebook.com/dtcuong0109
 echo Press any key to start!
 echo -------------------------------------------------------------------------------
 pause
-cd en/scripts
+cd bin\en\scripts
 call selector.bat
 :EXIT
 @echo off
