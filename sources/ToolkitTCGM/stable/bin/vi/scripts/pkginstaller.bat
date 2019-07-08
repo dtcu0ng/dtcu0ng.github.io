@@ -16,8 +16,8 @@ echo Neu khong thay thi ban vui long kiem tra lai cac buoc tren roi khoi dong la
 cd ..
 cd ..
 cd ..
-compoments\adb kill-server
-compoments\adb devices
+bin\adb kill-server
+bin\adb devices
 pause
 cls
 set appname= Default
@@ -26,7 +26,7 @@ echo Vui long nhap ten file cai dat ban da cho o buoc tren ( khong can them .apk
 set /p appname=
 @echo off
 echo Dang cai dat ( %appname%.apk )
-compoments\adb install ./%appname%.apk
+bin\adb install ./%appname%.apk
 @echo off
 echo Da cai dat xong!
 pause

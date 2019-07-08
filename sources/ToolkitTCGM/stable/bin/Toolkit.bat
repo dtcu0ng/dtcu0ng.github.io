@@ -8,7 +8,7 @@ echo Build date: 30/6/2019
 echo Version: 2.0 
 echo Source: htps://github.com/CuongZ/Source-TookitTCGM
 echo ---------------------------------   
-if exist "adb.exe" (
+if exist "bin/adb.exe" (
 echo FOUND
 echo ---------------------------------
 ) else (
@@ -17,7 +17,7 @@ echo ---------------------------------
 pause
 exit
 )
-if exist "AdbWinApi.dll" (
+if exist "bin/AdbWinApi.dll" (
 echo FOUND
 echo ---------------------------------
 ) else (
@@ -26,7 +26,7 @@ echo ---------------------------------
 pause
 exit
 )
-if exist "nircmd.exe" (
+if exist "bin/nircmd.exe" (
 echo FOUND
 echo ---------------------------------
 ) else (
@@ -35,7 +35,7 @@ echo ---------------------------------
 pause
 exit
 )
-if exist "nircmdc.exe" (
+if exist "bin/nircmdc.exe" (
  echo FOUND
  echo ---------------------------------
 ) else (
@@ -44,7 +44,7 @@ echo ---------------------------------
 pause
 exit
 )
-if exist "vi\scripts\selector.bat" (
+if exist "bin\vi\scripts\selector.bat" (
 echo FOUND
 echo ---------------------------------
 ) else (
@@ -53,7 +53,7 @@ echo ---------------------------------
 pause
 exit
 )
-if exist "vi\scripts\mksctbat.bat" (
+if exist "bin\vi\scripts\mksctbat.bat" (
 echo FOUND
 echo ---------------------------------
 ) else (
@@ -62,7 +62,7 @@ echo ---------------------------------
 pause
 exit
 )
-if exist "vi\scripts\pkginstaller.bat" (
+if exist "bin\vi\scripts\pkginstaller.bat" (
 echo FOUND
 echo ---------------------------------
 ) else (
@@ -71,7 +71,7 @@ echo ---------------------------------
 pause
 exit
 )
-if exist "en\scripts\selector.bat" (
+if exist "bin\en\scripts\selector.bat" (
 echo FOUND
 echo ---------------------------------
 ) else (
@@ -80,7 +80,7 @@ echo ---------------------------------
 pause
 exit
 )
-if exist "en\scripts\mksctbat.bat" (
+if exist "bin\en\scripts\mksctbat.bat" (
 echo FOUND
 echo ---------------------------------
 ) else (
@@ -89,7 +89,7 @@ echo ---------------------------------
 pause
 exit
 )
-if exist "en\scripts\pkginstaller.bat" (
+if exist "bin\en\scripts\pkginstaller.bat" (
 echo FOUND
 echo ---------------------------------
 ) else (
@@ -138,7 +138,7 @@ echo Facebook : https://facebook.com/dtcuong0109
 echo An phim bat ky de tiep tuc!
 echo -------------------------------------------------------------------------------
 pause
-cd vi\scripts
+cd bin\vi\scripts
 call selector.bat
 :EN
 cls

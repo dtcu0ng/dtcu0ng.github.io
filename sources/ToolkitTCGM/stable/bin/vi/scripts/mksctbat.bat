@@ -80,5 +80,5 @@ echo Ban ghi hoat dong:
 echo[
 echo Da tao shortcut %sct_name% cho ten goi %pkg_name% tai folder lam viec %work_dir%\AppMarket\AppMarket.exe va them no vao Desktop thanh cong!
 pause
-cd scripts
+cd vi/scripts
 call selector.bat
