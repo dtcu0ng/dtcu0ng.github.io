@@ -26,7 +26,7 @@
 + Nếu bạn vẫn gặp trường hợp đó hãy thông báo cho mình vào post FB này: để mình có sự hỗ trợ trực tiếp cho bạn :D
 
 
-# Nếu có các lỗi không được miêu tả ở đây, hãy comment vào post FB mình để ở đây, mình sẽ trực tiếp hỗ trợ cho bạn hoặc các bạn có thể tạo 1 cái issue trên Github giùm mình nhé :D
+### Nếu có các lỗi không được miêu tả ở đây, hãy comment vào post FB mình để ở đây, mình sẽ trực tiếp hỗ trợ cho bạn hoặc các bạn có thể tạo 1 cái issue trên Github giùm mình nhé :D
 
 
 
