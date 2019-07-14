@@ -3,7 +3,7 @@ title Shortcut Maker - Toolkit cho Tencent Gaming Buddy
 cls
 @echo off
 echo Shortcut Maker cho TCGM
-echo Ngay build: 7/7/2019
+echo Ngay build: 14/07/2019
 echo Version: 3.5
 echo Ban co the tim thay ma nguon tai: https://github.com/CuongZ/TookitTCGM_OfficialBuild
 echo[

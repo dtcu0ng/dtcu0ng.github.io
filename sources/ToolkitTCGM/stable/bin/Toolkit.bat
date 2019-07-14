@@ -1,18 +1,18 @@
 color 3f
 title Toolkit for Tencent Gaming Buddy - Version 3.5 AutoIT
-mode 107,27
+mode 130,30
 cls
 @echo off
-echo Run-Test Plugin
-echo Build date: 30/6/2019
-echo Version: 2.0 
-echo Source: htps://github.com/CuongZ/Source-TookitTCGM
+echo Self-check Plugin
+echo Build date: 14/07/2019
+echo Version: 3.5 RC1
+echo Source: https://github.com/CuongZ/ToolkitTCGM_OfficialBuild
 echo ---------------------------------   
 if exist "bin/adb.exe" (
 echo FOUND
 echo ---------------------------------
 ) else (
-echo NOT FOUND. Cannot run Toolkit if some file is missing. Please check or re-install the Toolkit.
+echo NOT FOUND. Cannot run Toolkit if some file is missing. Please run Toolkit again to re-check files
 echo ---------------------------------
 pause
 exit
@@ -21,7 +21,7 @@ if exist "bin/AdbWinApi.dll" (
 echo FOUND
 echo ---------------------------------
 ) else (
-echo NOT FOUND. Cannot run Toolkit if some file is missing. Please check or re-install the Toolkit.
+echo NOT FOUND. Cannot run Toolkit if some file is missing. Please run Toolkit again to re-check files
 echo ---------------------------------
 pause
 exit
@@ -30,7 +30,7 @@ if exist "bin/nircmd.exe" (
 echo FOUND
 echo ---------------------------------
 ) else (
-echo NOT FOUND. Cannot run Toolkit if some file is missing. Please check or re-install the Toolkit.
+echo NOT FOUND. Cannot run Toolkit if some file is missing. Please run Toolkit again to re-check files
 echo ---------------------------------
 pause
 exit
@@ -39,7 +39,7 @@ if exist "bin/nircmdc.exe" (
  echo FOUND
  echo ---------------------------------
 ) else (
-echo NOT FOUND. Cannot run Toolkit if some file is missing. Please check or re-install the Toolkit.
+echo NOT FOUND. Cannot run Toolkit if some file is missing. Please run Toolkit again to re-check files
 echo ---------------------------------
 pause
 exit
@@ -48,7 +48,7 @@ if exist "bin\vi\scripts\selector.bat" (
 echo FOUND
 echo ---------------------------------
 ) else (
-echo NOT FOUND. Cannot run Toolkit if some file is missing. Please check or re-install the Toolkit.
+echo NOT FOUND. Cannot run Toolkit if some file is missing. Please run Toolkit again to re-check files
 echo ---------------------------------
 pause
 exit
@@ -57,7 +57,7 @@ if exist "bin\vi\scripts\mksctbat.bat" (
 echo FOUND
 echo ---------------------------------
 ) else (
-echo NOT FOUND. Cannot run Toolkit if some file is missing. Please check or re-install the Toolkit.
+echo NOT FOUND. Cannot run Toolkit if some file is missing. Please run Toolkit again to re-check files
 echo ---------------------------------
 pause
 exit
@@ -66,7 +66,7 @@ if exist "bin\vi\scripts\pkginstaller.bat" (
 echo FOUND
 echo ---------------------------------
 ) else (
-echo NOT FOUND. Cannot run Toolkit if some file is missing. Please check or re-install the Toolkit.
+echo NOT FOUND. Cannot run Toolkit if some file is missing. Please run Toolkit again to re-check files
 echo ---------------------------------
 pause
 exit
@@ -75,7 +75,7 @@ if exist "bin\en\scripts\selector.bat" (
 echo FOUND
 echo ---------------------------------
 ) else (
-echo NOT FOUND. Cannot run Toolkit if some file is missing. Please check or re-install the Toolkit.
+echo NOT FOUND. Cannot run Toolkit if some file is missing. Please run Toolkit again to re-check files
 echo ---------------------------------
 pause
 exit
@@ -84,7 +84,7 @@ if exist "bin\en\scripts\mksctbat.bat" (
 echo FOUND
 echo ---------------------------------
 ) else (
-echo NOT FOUND. Cannot run Toolkit if some file is missing. Please check or re-install the Toolkit.
+echo NOT FOUND. Cannot run Toolkit if some file is missing. Please run Toolkit again to re-check files
 echo ---------------------------------
 pause
 exit
@@ -93,7 +93,7 @@ if exist "bin\en\scripts\pkginstaller.bat" (
 echo FOUND
 echo ---------------------------------
 ) else (
-echo NOT FOUND. Cannot run Toolkit if some file is missing. Please check or re-install the Toolkit.
+echo NOT FOUND. Cannot run Toolkit if some file is missing. Please run Toolkit again to re-check files
 echo ---------------------------------
 pause
 exit
@@ -129,10 +129,10 @@ cls
 @echo off
 echo --------------------------------------------------------------------------------------
 echo Toolkit cho Tencent Gaming Buddy
-echo Ngay build: 2/7/2019  9:12PM
+echo Ngay build: 14/07/2019  9:06AM
 echo Ban co the tim thay ma nguon tai: https://github.com/CuongZ/ToolkitTCGM_OfficialBuild
 echo --------------------------------------------------------------------------------------
-echo (c) CuongZ. Phien ban 3.5 AutoIT
+echo (c) CuongZ. Phien ban 3.5 RC1
 echo Github : https://github.com/CuongZ
 echo Facebook : https://facebook.com/dtcuong0109 
 echo An phim bat ky de tiep tuc!
@@ -145,10 +145,10 @@ cls
 @echo off
 echo -------------------------------------------------------------------------------
 echo Toolkit for Tencent Gaming Buddy
-echo Build date: 7/7/2019
+echo Build date: 14/07/2019 9:06AM
 echo Source: https://github.com/CuongZ/ToolkitTCGM_OfficialBuild
 echo -------------------------------------------------------------------------------
-echo (c) Made by CuongZ. Version 3.5 AutoIT
+echo (c) Made by CuongZ. Version 3.5 RC1
 echo Github : https://github.com/CuongZ
 echo Facebook : https://facebook.com/dtcuong0109 
 echo Press any key to start!
@@ -167,4 +167,5 @@ echo Force closing NirCMD
 taskkill /F /IM nircmd.exe
 taskkill /F /IM mksct.exe
 taskkill /F /IM nircmdc.exe
+taskkill /F /IM Toolkit.exe
 exit

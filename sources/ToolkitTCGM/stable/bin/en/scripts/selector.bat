@@ -3,14 +3,16 @@ title Selector menu - Toolkit for Tencent Gaming Buddy
 cls
 @ECHO off
 echo Function menu - Toolkit for TCGM
-echo Build date: 7/7/2019
+echo Build date: 14/07/2019
 echo Source: https://github.com/CuongZ/ToolkitTCGM_OfficialBuild
 echo[
 echo -------------------------------------------
+echo[
 echo (1): Install package
 echo (2): Make shortcut to open app faster
 echo (3): Exit
 echo              (c) CuongZ
+echo[
 echo -------------------------------------------
 @ECHO OFF
 echo[
@@ -26,4 +28,7 @@ call pkginstaller.bat
 :exit
 taskkill /F /IM adb.exe
 taskkill /F /IM mksct.exe
+taskkill /F /IM nircmd.exe
+taskkill /F /IM nircmdc.exe
+taskkill /F /IM Toolkit.exe
 exit

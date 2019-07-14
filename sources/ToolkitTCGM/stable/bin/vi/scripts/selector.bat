@@ -3,14 +3,16 @@ title Bang chon chuc nang - Toolkit cho Tencent Gaming Buddy
 cls
 @ECHO off
 echo Bang chon chuc nang - Toolkit cho Tencent Gaming Buddy
-echo Ngay build: 2/7/2019  9:12PM
+echo Ngay build: 14/07/2019  9:12PM
 echo Ban co the tim thay ma nguon tai: https://github.com/CuongZ/ToolkitTCGM_OfficialBuild
 echo[
 echo -------------------------------------------
+echo[
 echo (1): Trinh cai dat goi
 echo (2): Lam shortcut de vao app nhanh hon
 echo (3): Thoat
 echo              (c) CuongZ
+echo[
 echo -------------------------------------------
 @ECHO OFF
 echo[
@@ -26,4 +28,7 @@ call pkginstaller.bat
 :exit
 taskkill /F /IM adb.exe
 taskkill /F /IM mksct.exe
+taskkill /F /IM nircmd.exe
+taskkill /F /IM nircmdc.exe
+taskkill /F /IM Toolkit.exe
 exit
