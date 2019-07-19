@@ -62,6 +62,15 @@ echo ---------------------------------
 pause
 exit
 )
+if exist "bin\vi\scripts\PKGCheck.bat" (
+echo FOUND
+echo ---------------------------------
+) else (
+echo NOT FOUND. Cannot run Toolkit if some file is missing. Please run Toolkit again to re-check files
+echo ---------------------------------
+pause
+exit
+)
 if exist "bin\vi\scripts\pkginstaller.bat" (
 echo FOUND
 echo ---------------------------------
@@ -81,6 +90,15 @@ pause
 exit
 )
 if exist "bin\en\scripts\mksctbat.bat" (
+echo FOUND
+echo ---------------------------------
+) else (
+echo NOT FOUND. Cannot run Toolkit if some file is missing. Please run Toolkit again to re-check files
+echo ---------------------------------
+pause
+exit
+)
+if exist "bin\en\scripts\PKGCheck.bat" (
 echo FOUND
 echo ---------------------------------
 ) else (
