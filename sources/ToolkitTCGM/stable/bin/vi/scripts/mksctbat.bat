@@ -4,7 +4,7 @@ cls
 @echo off
 echo Shortcut Maker cho TCGM
 echo Ngay build: 19/07/2019
-echo Version: 3.6
+echo Version: 3.5
 echo Ban co the tim thay ma nguon tai: https://github.com/CuongZ/TookitTCGM_OfficialBuild
 echo[
 echo Ban ghi hoat dong:

@@ -10,16 +10,14 @@ echo ---------------------------------------------
 echo[
 echo (1): Trinh cai dat goi
 echo (2): Lam shortcut de vao app nhanh hon
-echo (3): Kiem tra ten goi ( Package Name Check )
-echo (4): Thoat
+echo (3): Thoat
 echo              (c) CuongZ
 echo[
 echo ---------------------------------------------
 @ECHO OFF
 echo[
-CHOICE /N /C:1234 /M "Nhap lua chon cua ban tai day:"%1
-IF ERRORLEVEL ==4 GOTO EXIT
-IF ERRORLEVEL ==3 GOTO PKGCHECK
+CHOICE /N /C:123 /M "Nhap lua chon cua ban tai day:"%1
+IF ERRORLEVEL ==3 GOTO EXIT
 IF ERRORLEVEL ==2 GOTO MKSCT
 IF ERRORLEVEL ==1 GOTO INSPKG
 GOTO exit

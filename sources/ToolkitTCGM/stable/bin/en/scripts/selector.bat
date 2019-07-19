@@ -10,16 +10,14 @@ echo -------------------------------------------
 echo[
 echo (1): Install package
 echo (2): Make shortcut to open app faster
-echo (3): Package Name Check
-echo (4): Exit
+echo (3): Exit
 echo              (c) CuongZ
 echo[
 echo -------------------------------------------
 @ECHO OFF
 echo[
 CHOICE /N /C:1234 /M "Enter your select here:"%1
-IF ERRORLEVEL ==4 GOTO EXIT
-IF ERRORLEVEL ==3 GOTO PKGCHECK
+IF ERRORLEVEL ==3 GOTO EXIT
 IF ERRORLEVEL ==2 GOTO MKSCT
 IF ERRORLEVEL ==1 GOTO INSPKG
 GOTO exit

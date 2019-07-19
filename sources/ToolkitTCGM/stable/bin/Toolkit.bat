@@ -1,5 +1,5 @@
 color 3f
-title Toolkit for Tencent Gaming Buddy - Version 3.6
+title Toolkit for Tencent Gaming Buddy - Version 3.5
 mode 130,30
 cls
 @echo off
@@ -132,7 +132,7 @@ echo Toolkit cho Tencent Gaming Buddy
 echo Ngay build: 19/07/2019  9:06AM
 echo Ban co the tim thay ma nguon tai: https://github.com/CuongZ/ToolkitTCGM_OfficialBuild
 echo --------------------------------------------------------------------------------------
-echo (c) CuongZ. Phien ban 3.6
+echo (c) CuongZ. Phien ban 3.5
 echo Github : https://github.com/CuongZ
 echo Facebook : https://facebook.com/dtcuong0109 
 echo An phim bat ky de tiep tuc!
@@ -148,7 +148,7 @@ echo Toolkit for Tencent Gaming Buddy
 echo Build date: 19/07/2019 9:06AM
 echo Source: https://github.com/CuongZ/ToolkitTCGM_OfficialBuild
 echo -------------------------------------------------------------------------------
-echo (c) Made by CuongZ. Version 3.6
+echo (c) Made by CuongZ. Version 3.5
 echo Github : https://github.com/CuongZ
 echo Facebook : https://facebook.com/dtcuong0109 
 echo Press any key to start!
