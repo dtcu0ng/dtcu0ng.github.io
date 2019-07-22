@@ -1,5 +1,5 @@
-﻿; ToolkitTCGM Loader
-; Version: 3.5 RC2
+; ToolkitTCGM Loader
+; Version: 3.6 RC2
 ; (c) CuongZ. All right reserved.
 ; Source: https://github.com/CuongZ/AutoIT_Stuff/
 ; Use this to Check/Download Toolkit's Compoments
@@ -33,7 +33,6 @@ Func Check_GB_RootFolder()
 	Local $ifileexists = FileExists($sfilepath)
 	If $ifileexists Then
 	Else
-		MsgBox(0, "Self-check file - Developed by CuongZ", "Cannot find an files. Will download missing file from Official Server." & @CRLF & "FileExist returned: " & $ifileexists, 0.3)
 		DirCreate("bin/")
 	EndIf
 EndFunc
@@ -43,7 +42,6 @@ Func Check_VN_RootFolder()
 	Local $ifileexists = FileExists($sfilepath)
 	If $ifileexists Then
 	Else
-		MsgBox(0, "Self-check file - Developed by CuongZ", "Cannot find an files. Will download missing file from Official Server." & @CRLF & "FileExist returned: " & $ifileexists, 0.3)
 		DirCreate("bin/vi/")
 	EndIf
 EndFunc
@@ -53,7 +51,6 @@ Func Check_VN_ScriptsFolder()
 	Local $ifileexists = FileExists($sfilepath)
 	If $ifileexists Then
 	Else
-		MsgBox(0, "Self-check file - Developed by CuongZ", "Cannot find an files. Will download missing file from Official Server." & @CRLF & "FileExist returned: " & $ifileexists, 0.3)
 		DirCreate("bin/vi/scripts/")
 	EndIf
 EndFunc
@@ -63,7 +60,6 @@ Func Check_EN_RootFolder()
 	Local $ifileexists = FileExists($sfilepath)
 	If $ifileexists Then
 	Else
-		MsgBox(0, "Self-check file - Developed by CuongZ", "Cannot find an files. Will download missing file from Official Server." & @CRLF & "FileExist returned: " & $ifileexists, 0.3)
 		DirCreate("bin/en/")
 	EndIf
 EndFunc
@@ -73,7 +69,6 @@ Func Check_EN_ScriptsFolder()
 	Local $ifileexists = FileExists($sfilepath)
 	If $ifileexists Then
 	Else
-		MsgBox(0, "Self-check file - Developed by CuongZ", "Cannot find an files. Will download missing file from Official Server." & @CRLF & "FileExist returned: " & $ifileexists, 0.3)
 		DirCreate("bin/en/scripts/")
 	EndIf
 EndFunc
@@ -83,7 +78,6 @@ Func Check_GB_Compoments_ADB()
 	Local $ifileexists = FileExists($sfilepath)
 	If $ifileexists Then
 	Else
-		MsgBox(0, "Self-check file - Developed by CuongZ", "Cannot find an files. Will download missing file from Official Server." & @CRLF & "FileExist returned: " & $ifileexists, 0.3)
 		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/bin/adb.exe", "bin/adb.exe", 1, 1)
 	EndIf
 EndFunc
@@ -93,7 +87,6 @@ Func Check_GB_Compoments_Script()
 	Local $ifileexists = FileExists($sfilepath)
 	If $ifileexists Then
 	Else
-		MsgBox(0, "Self-check file - Developed by CuongZ", "Cannot find an files. Will download missing file from Official Server." & @CRLF & "FileExist returned: " & $ifileexists, 0.3)
 		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/bin/Toolkit.bat", "bin/Toolkit.bat", 1, 1)
 	EndIf
 EndFunc
@@ -103,7 +96,6 @@ Func Check_GB_Compoments_ADBApi()
 	Local $ifileexists = FileExists($sfilepath)
 	If $ifileexists Then
 	Else
-		MsgBox(0, "Self-check file - Developed by CuongZ", "Cannot find an files. Will download missing file from Official Server." & @CRLF & "FileExist returned: " & $ifileexists, 0.3)
 		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/bin/AdbWinApi.dll", "bin/AdbWinApi.dll", 1, 1)
 	EndIf
 EndFunc
@@ -113,7 +105,6 @@ Func Check_EN_ScriptsInstallPKG()
 	Local $ifileexists = FileExists($sfilepath)
 	If $ifileexists Then
 	Else
-		MsgBox(0, "Self-check file - Developed by CuongZ", "Cannot find an files. Will download missing file from Official Server." & @CRLF & "FileExist returned: " & $ifileexists, 0.3)
 		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/bin/en/scripts/pkginstaller.bat", "bin/en/scripts/pkginstaller.bat", 1, 1)
 	EndIf
 EndFunc
@@ -123,7 +114,6 @@ Func Check_EN_Scripts_MainMenu()
 	Local $ifileexists = FileExists($sfilepath)
 	If $ifileexists Then
 	Else
-		MsgBox(0, "Self-check file - Developed by CuongZ", "Cannot find an files. Will download missing file from Official Server." & @CRLF & "FileExist returned: " & $ifileexists, 0.3)
 		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/bin/en/scripts/selector.bat", "bin/en/scripts/selector.bat", 1, 1)
 	EndIf
 EndFunc
@@ -133,7 +123,6 @@ Func Check_EN_Scripts_PkgCheck()
 	Local $ifileexists = FileExists($sfilepath)
 	If $ifileexists Then
 	Else
-		MsgBox(0, "Self-check file - Developed by CuongZ", "Cannot find an files. Will download missing file from Official Server." & @CRLF & "FileExist returned: " & $ifileexists, 0.3)
 		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/bin/en/scripts/PKGCheck.bat", "bin/en/scripts/PKGCheck.bat", 1, 1)
 	EndIf
 EndFunc
@@ -143,7 +132,6 @@ Func Check_EN_Scripts_Mksct()
 	Local $ifileexists = FileExists($sfilepath)
 	If $ifileexists Then
 	Else
-		MsgBox(0, "Self-check file - Developed by CuongZ", "Cannot find an files. Will download missing file from Official Server." & @CRLF & "FileExist returned: " & $ifileexists, 0.3)
 		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/bin/en/scripts/mksctbat.bat", "bin/en/scripts/mksctbat.bat", 1, 1)
 	EndIf
 EndFunc
@@ -153,7 +141,6 @@ Func Check_GB_Compoments_NirCMD()
 	Local $ifileexists = FileExists($sfilepath)
 	If $ifileexists Then
 	Else
-		MsgBox(0, "Self-check file - Developed by CuongZ", "Cannot find an files. Will download missing file from Official Server." & @CRLF & "FileExist returned: " & $ifileexists, 0.3)
 		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/bin/nircmd.exe", "bin/nircmd.exe", 1, 1)
 	EndIf
 EndFunc
@@ -163,7 +150,6 @@ Func Check_GB_Compoments_NirCMDc()
 	Local $ifileexists = FileExists($sfilepath)
 	If $ifileexists Then
 	Else
-		MsgBox(0, "Self-check file - Developed by CuongZ", "Cannot find an files. Will download missing file from Official Server." & @CRLF & "FileExist returned: " & $ifileexists, 0.3)
 		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/bin/nircmdc.exe", "bin/nircmdc.exe", 1, 1)
 	EndIf
 EndFunc
@@ -173,7 +159,6 @@ Func Check_VN_Scripts_PkgInstall()
 	Local $ifileexists = FileExists($sfilepath)
 	If $ifileexists Then
 	Else
-		MsgBox(0, "Self-check file - Developed by CuongZ", "Cannot find an files. Will download missing file from Official Server." & @CRLF & "FileExist returned: " & $ifileexists, 0.3)
 		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/bin/vi/scripts/pkginstaller.bat", "bin/vi/scripts/pkginstaller.bat", 1, 1)
 	EndIf
 EndFunc
@@ -183,7 +168,6 @@ Func Check_VN_Scripts_PkgCheck()
 	Local $ifileexists = FileExists($sfilepath)
 	If $ifileexists Then
 	Else
-		MsgBox(0, "Self-check file - Developed by CuongZ", "Cannot find an files. Will download missing file from Official Server." & @CRLF & "FileExist returned: " & $ifileexists, 0.3)
 		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/bin/vi/scripts/PKGCheck.bat", "bin/vi/scripts/PKGCheck.bat", 1, 1)
 	EndIf
 EndFunc
@@ -193,7 +177,6 @@ Func Check_VN_Scripts_Mksct()
 	Local $ifileexists = FileExists($sfilepath)
 	If $ifileexists Then
 	Else
-		MsgBox(0, "Self-check file - Developed by CuongZ", "Cannot find an files. Will download missing file from Official Server." & @CRLF & "FileExist returned: " & $ifileexists, 0.3)
 		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/bin/vi/scripts/mksctbat.bat", "bin/vi/scripts/mksctbat.bat", 1, 1)
 	EndIf
 EndFunc
@@ -202,8 +185,8 @@ Func Check_VN_Scripts_MainMenu()
 	Local $sfilepath = "bin/vi/scripts/selector.bat"
 	Local $ifileexists = FileExists($sfilepath)
 	If $ifileexists Then
-	Else
-		MsgBox(0, "Self-check file - Developed by CuongZ", "Cannot find an files. Will download missing file from Official Server." & @CRLF & "FileExist returned: " & $ifileexists, 0.3)
+Else
+		MsgBox(0, "ToolkitTCGM - Loader", " Downloading files from Official Server...", 5)
 		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/bin/vi/scripts/selector.bat", "bin/vi/scripts/selector.bat", 1, 1)
 	EndIf
 EndFunc
@@ -211,6 +194,6 @@ EndFunc
 ; End Function Handler
 
 ; Load Script.
-MsgBox(0, "Self-check file - Developed by CuongZ", "Download / Check done. The script will open after 5 second. Press OK to run Toolkit if not automatic open the script." & @CRLF & "(c) CuongZ", 5)
+MsgBox(0, "ToolkitTCGM - Loader", "Check file(s) done. The script will open after 2 second. Press OK to run Toolkit if not automatic open the script." & @CRLF & "(c) CuongZ", 2)
 Run(@ComSpec & " /c " & Chr(34) & @ScriptDir & "/bin/Toolkit.bat" & Chr(34), @ScriptDir)
 ; End load script.
