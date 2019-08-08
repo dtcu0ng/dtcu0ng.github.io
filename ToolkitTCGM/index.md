@@ -23,7 +23,7 @@
 
 ## Sau khi chọn chức năng, nhập tên apk thì script tự động tắt ngủm luôn :(
 + Lỗi này là do sai sót ở đâu đó, mình cũng đã cố gắng hết sức để sửa nó và cố cho nó giảm thiểu bớt đi đáng kể
-+ Nếu bạn vẫn gặp trường hợp đó hãy thông báo cho mình vào [https://www.facebook.com/F1T.dtcuong/posts/1996160070483694](post FB này) để mình có sự hỗ trợ trực tiếp cho bạn :D
++ Nếu bạn vẫn gặp trường hợp đó hãy thông báo cho mình vào [post FB này](https://www.facebook.com/F1T.dtcuong/posts/1996160070483694) để mình có sự hỗ trợ trực tiếp cho bạn :D
 
 
 ## Sau khi cài đặt app, app không chạy được
@@ -31,7 +31,7 @@
 + Cách Xử lý: Tắt USB Debug và Developer Mode, khi nào cần sử dụng thì bật lại.
 
 
-### Nếu có các lỗi không được miêu tả ở đây, hãy comment vào post FB mình để [https://www.facebook.com/F1T.dtcuong/posts/1996160070483694]( ở đây) , mình sẽ trực tiếp hỗ trợ cho bạn hoặc các bạn có thể tạo 1 cái issue trên Github giùm mình nhé :D
+### Nếu có các lỗi không được miêu tả ở đây, hãy comment vào post FB mình để [ở đây](https://www.facebook.com/F1T.dtcuong/posts/1996160070483694) , mình sẽ trực tiếp hỗ trợ cho bạn hoặc các bạn có thể tạo 1 cái issue trên Github giùm mình nhé :D
 
 
 
