@@ -1,15 +1,15 @@
 #Region ;**** Directives created by AutoIt3Wrapper_GUI ****
-#AutoIt3Wrapper_Icon=icon.ico
-#AutoIt3Wrapper_Outfile_x64=Toolkit.Exe
+#AutoIt3Wrapper_Outfile_x64=Toolkit.exe
 #AutoIt3Wrapper_Compression=4
 #AutoIt3Wrapper_UseX64=y
-#AutoIt3Wrapper_Res_Comment=Toolkit4TCGM
-#AutoIt3Wrapper_Res_Description=Toolkit4TCGM
-#AutoIt3Wrapper_Res_Fileversion=3.7.1.0
-#AutoIt3Wrapper_Res_ProductName=Toolkit4TCGM
-#AutoIt3Wrapper_Res_ProductVersion=3.7.1.0
+#AutoIt3Wrapper_Res_Comment=ToolkitTCGM by CuongZ
+#AutoIt3Wrapper_Res_Description=ToolkitTCGM by CuongZ
+#AutoIt3Wrapper_Res_Fileversion=4.2.0.0
+#AutoIt3Wrapper_Res_ProductName=ToolkitTCGM
+#AutoIt3Wrapper_Res_ProductVersion=4.2.0.0
 #AutoIt3Wrapper_Res_CompanyName=CuongZ
-#AutoIt3Wrapper_Res_LegalCopyright=(c) CuongZ. All right reserved.
+#AutoIt3Wrapper_Res_LegalCopyright=(c) CuongZ
+#AutoIt3Wrapper_Res_LegalTradeMarks=(c) CuongZ
 #AutoIt3Wrapper_Res_Language=1033
 #AutoIt3Wrapper_Res_requestedExecutionLevel=None
 #EndRegion ;**** Directives created by AutoIt3Wrapper_GUI ****
@@ -33,11 +33,11 @@ Check_VN_Scripts_Mksct()
 Check_VN_Scripts_MainMenu()
 Check_VN_Scripts_PkgCheck()
 Check_VN_Scripts_PkgInstall()
-Check_GB_Compoments_Script()
 Check_GB_Compoments_ADB()
 Check_GB_Compoments_ADBApi()
 Check_GB_Compoments_NirCMD()
 Check_GB_Compoments_NirCMDc()
+Check_GB_Compoment_Close()
 ; End Function List.
 
 ; Function Handler:
@@ -93,16 +93,7 @@ Func Check_GB_Compoments_ADB()
 	Local $ifileexists = FileExists($sfilepath)
 	If $ifileexists Then
 	Else
-		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/v3_7/bin/adb.exe", "bin/adb.exe", 1, 1)
-	EndIf
-EndFunc
-
-Func Check_GB_Compoments_Script()
-	Local $sfilepath = "bin/Toolkit.bat"
-	Local $ifileexists = FileExists($sfilepath)
-	If $ifileexists Then
-	Else
-		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/v3_7/bin/Toolkit.bat", "bin/Toolkit.bat", 1, 1)
+		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/v4_2/bin/adb.exe", "bin/adb.exe", 1, 1)
 	EndIf
 EndFunc
 
@@ -111,7 +102,7 @@ Func Check_GB_Compoments_ADBApi()
 	Local $ifileexists = FileExists($sfilepath)
 	If $ifileexists Then
 	Else
-		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/v3_7/bin/AdbWinApi.dll", "bin/AdbWinApi.dll", 1, 1)
+		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/v4_2/bin/AdbWinApi.dll", "bin/AdbWinApi.dll", 1, 1)
 	EndIf
 EndFunc
 
@@ -120,7 +111,7 @@ Func Check_EN_ScriptsInstallPKG()
 	Local $ifileexists = FileExists($sfilepath)
 	If $ifileexists Then
 	Else
-		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/v3_7/bin/en/scripts/pkginstaller.bat", "bin/en/scripts/pkginstaller.bat", 1, 1)
+		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/v4_2/bin/en/scripts/pkginstaller.bat", "bin/en/scripts/pkginstaller.bat", 1, 1)
 	EndIf
 EndFunc
 
@@ -129,7 +120,7 @@ Func Check_EN_Scripts_MainMenu()
 	Local $ifileexists = FileExists($sfilepath)
 	If $ifileexists Then
 	Else
-		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/v3_7/bin/en/scripts/selector.bat", "bin/en/scripts/selector.bat", 1, 1)
+		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/v4_2/bin/en/scripts/selector.bat", "bin/en/scripts/selector.bat", 1, 1)
 	EndIf
 EndFunc
 
@@ -138,7 +129,7 @@ Func Check_EN_Scripts_PkgCheck()
 	Local $ifileexists = FileExists($sfilepath)
 	If $ifileexists Then
 	Else
-		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/v3_7/bin/en/scripts/PKGCheck.bat", "bin/en/scripts/PKGCheck.bat", 1, 1)
+		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/v4_2/bin/en/scripts/PKGCheck.bat", "bin/en/scripts/PKGCheck.bat", 1, 1)
 	EndIf
 EndFunc
 
@@ -147,7 +138,7 @@ Func Check_EN_Scripts_Mksct()
 	Local $ifileexists = FileExists($sfilepath)
 	If $ifileexists Then
 	Else
-		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/v3_7/bin/en/scripts/mksctbat.bat", "bin/en/scripts/mksctbat.bat", 1, 1)
+		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/v4_2/bin/en/scripts/mksctbat.bat", "bin/en/scripts/mksctbat.bat", 1, 1)
 	EndIf
 EndFunc
 
@@ -156,7 +147,7 @@ Func Check_GB_Compoments_NirCMD()
 	Local $ifileexists = FileExists($sfilepath)
 	If $ifileexists Then
 	Else
-		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/v3_7/bin/nircmd.exe", "bin/nircmd.exe", 1, 1)
+		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/v4_2/bin/nircmd.exe", "bin/nircmd.exe", 1, 1)
 	EndIf
 EndFunc
 
@@ -165,7 +156,7 @@ Func Check_GB_Compoments_NirCMDc()
 	Local $ifileexists = FileExists($sfilepath)
 	If $ifileexists Then
 	Else
-		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/v3_7/bin/nircmdc.exe", "bin/nircmdc.exe", 1, 1)
+		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/v4_2/bin/nircmdc.exe", "bin/nircmdc.exe", 1, 1)
 	EndIf
 EndFunc
 
@@ -174,7 +165,7 @@ Func Check_VN_Scripts_PkgInstall()
 	Local $ifileexists = FileExists($sfilepath)
 	If $ifileexists Then
 	Else
-		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/v3_7/bin/vi/scripts/pkginstaller.bat", "bin/vi/scripts/pkginstaller.bat", 1, 1)
+		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/v4_2/bin/vi/scripts/pkginstaller.bat", "bin/vi/scripts/pkginstaller.bat", 1, 1)
 	EndIf
 EndFunc
 
@@ -183,7 +174,7 @@ Func Check_VN_Scripts_PkgCheck()
 	Local $ifileexists = FileExists($sfilepath)
 	If $ifileexists Then
 	Else
-		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/v3_7/bin/vi/scripts/PKGCheck.bat", "bin/vi/scripts/PKGCheck.bat", 1, 1)
+		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/v4_2/bin/vi/scripts/PKGCheck.bat", "bin/vi/scripts/PKGCheck.bat", 1, 1)
 	EndIf
 EndFunc
 
@@ -192,7 +183,7 @@ Func Check_VN_Scripts_Mksct()
 	Local $ifileexists = FileExists($sfilepath)
 	If $ifileexists Then
 	Else
-		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/v3_7/bin/vi/scripts/mksctbat.bat", "bin/vi/scripts/mksctbat.bat", 1, 1)
+		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/v4_2/bin/vi/scripts/mksctbat.bat", "bin/vi/scripts/mksctbat.bat", 1, 1)
 	EndIf
 EndFunc
 
@@ -201,8 +192,16 @@ Func Check_VN_Scripts_MainMenu()
 	Local $ifileexists = FileExists($sfilepath)
 	If $ifileexists Then
 Else
+		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/v4_2/bin/vi/scripts/selector.bat", "bin/vi/scripts/selector.bat", 1, 1)
+	EndIf
+EndFunc
+Func Check_GB_Compoment_Close()
+	Local $sfilepath = "bin/close.bat"
+	Local $ifileexists = FileExists($sfilepath)
+	If $ifileexists Then
+Else
 		MsgBox(0, "ToolkitTCGM - Loader", " Downloading files from Official Server...", 5)
-		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/v3_7/bin/vi/scripts/selector.bat", "bin/vi/scripts/selector.bat", 1, 1)
+		InetGet("http://cuongz.github.io/sources/ToolkitTCGM/stable/v4_2/bin/close.bat", "bin/close.bat", 1, 1)
 	EndIf
 EndFunc
 ; End Check Compoments
@@ -210,15 +209,88 @@ EndFunc
 
 ; Load Script.
 MsgBox(0, "ToolkitTCGM - Loader", "Check files done! Opening Toolkit in 2 seconds..." & @LF & "Press OK to run Toolkit if not automatic open the script." & @CRLF & "(c) CuongZ", 2)
-AFTERCHECK()
-Func AFTERCHECK()
-	Local $sfilepath = "bin/Toolkit.bat"
+Func LANGSELECT_ENG()
+	Local $sfilepath = "bin/en/scripts/selector.bat"
 	Local $ifileexists = FileExists($sfilepath)
 	If $ifileexists Then
-    Run(@ComSpec & " /c " & Chr(34) & @ScriptDir & "/bin/Toolkit.bat" & Chr(34), @ScriptDir)
-	WinWait ( "Toolkit for Tencent Gaming Buddy - Version 3.7", "Waiting script opening...", 2) ; Max timeout. After that timeout user should have this error code: 0x1 ( DEFIND: Cannot download files. Please check Internet connection )
+    Run(@ComSpec & " /c " & Chr(34) & @ScriptDir & "/bin/en/scripts/selector.bat" & Chr(34), @ScriptDir)
+	WinWaitActive ( "Selector menu - Toolkit for Tencent Gaming Buddy", "Waiting script opening...", 2) ; Max timeout. After that timeout user should have this error code: 0x1 ( DEFIND: Cannot download files. Please check Internet connection )
 Else
-		MsgBox(0, "ToolkitTCGM - Loader", "ERRORCODE: 0x1" & @LF & "Cannot download required file(s). Please check your Internet connection and try launch the Toolkit again" & @LF & "TIPS: You can use offline version if you can't fix this problem.")
+		MsgBox(0, "ToolkitTCGM - Loader", "ERRORCODE: 0x1" & @LF & "Cannot download required file(s). Please check your Internet connection and try re-install the Toolkit again" & @LF & "TIPS: You can use offline version if you can't fix this problem.")
 	EndIf
 EndFunc
-; End load script.
+
+Func LANGSELECT_VN()
+	Local $sfilepath = "bin/vi/scripts/selector.bat"
+	Local $ifileexists = FileExists($sfilepath)
+	If $ifileexists Then
+    Run(@ComSpec & " /c " & Chr(34) & @ScriptDir & "/bin/vi/scripts/selector.bat" & Chr(34), @ScriptDir)
+	WinWaitActive ( "Bang chon chuc nang - Toolkit cho Tencent Gaming Buddy", "Waiting script opening...", 2) ; Max timeout. After that timeout user should have this error code: 0x1 ( DEFIND: Cannot download files. Please check Internet connection )
+Else
+		MsgBox(0, "ToolkitTCGM - Loader", "ERRORCODE: 0x1" & @LF & "Cannot download required file(s). Please check your Internet connection and try re-install the Toolkit again" & @LF & "TIPS: You can use offline version if you can't fix this problem.")
+	EndIf
+EndFunc
+
+Func CLEAN()
+	MsgBox(0, "Coming soon","Reinstall Toolkit will be back soon.")
+EndFunc
+
+Func CLOSE()
+	Local $sfilepath = "bin/close.bat"
+	Local $ifileexists = FileExists($sfilepath)
+	If $ifileexists Then
+    Run(@ComSpec & " /c " & Chr(34) & @ScriptDir & "/bin/close.bat" & Chr(34), @ScriptDir)
+	WinWaitActive ( "Close - Toolkit for Tencent Gaming Buddy", "Closing...", 2) ; Max timeout. After that timeout user should have this error code: 0x1 ( DEFIND: Cannot download files. Please check Internet connection )
+Else
+		MsgBox(0, "ToolkitTCGM - Loader", "ERRORCODE: 0x1" & @LF & "Cannot close because missing required file(s). Please check your Internet connection and try re-install the Toolkit again")
+	EndIf
+EndFunc
+
+#Region ### START Koda GUI section ### Form=
+Global $Form1 = GUICreate("ToolkitTCGM - Language Select", 434, 224, -1, -1)
+Global $LangSelect_ENG = GUICtrlCreateButton("English", 104, 80, 75, 25)
+GUICtrlSetFont(-1, 8, 400, 0, "Verdana")
+Global $GUIFunc_Reinstall = GUICtrlCreateButton("Re-install Toolkit", 152, 120, 121, 25)
+GUICtrlSetFont(-1, 8, 400, 0, "Verdana")
+Global $LangSelect_VN = GUICtrlCreateButton("Vietnamese", 240, 80, 75, 25)
+GUICtrlSetFont(-1, 8, 400, 0, "Verdana")
+Global $Please = GUICtrlCreateLabel("Please select your language / Hay chon ngon ngu cua ban.", 56, 40, 340, 17)
+GUICtrlSetFont(-1, 8, 400, 0, "Verdana")
+Global $Label1 = GUICtrlCreateLabel("Version 4.2. (c) CuongZ.", 56, 192, 328, 17)
+GUICtrlSetFont(-1, 8, 400, 0, "Verdana")
+Global $Button2 = GUICtrlCreateButton("Exit", 176, 160, 75, 25)
+GUICtrlSetFont(-1, 8, 400, 0, "Verdana")
+GUISetState(@SW_SHOW)
+#EndRegion ### END Koda GUI section ###
+
+While 1
+	$nMsg = GUIGetMsg()
+	Switch $nMsg
+		Case $LangSelect_ENG
+			LANGSELECT_ENG()
+		Case $LangSelect_VN
+			LANGSELECT_VN()
+		Case $GUIFunc_Reinstall
+			CLEAN()
+			Check_GB_RootFolder()
+            Check_EN_RootFolder()
+			Check_EN_ScriptsFolder()
+			Check_EN_ScriptsInstallPKG()
+            Check_EN_Scripts_MainMenu()
+            Check_EN_Scripts_Mksct()
+		    Check_EN_Scripts_PkgCheck()
+			Check_VN_RootFolder()
+			Check_VN_ScriptsFolder()
+			Check_VN_Scripts_Mksct()
+            Check_VN_Scripts_MainMenu()
+            Check_VN_Scripts_PkgCheck()
+			Check_VN_Scripts_PkgInstall()
+            Check_GB_Compoments_ADB()
+            Check_GB_Compoments_ADBApi()
+			Check_GB_Compoments_NirCMD()
+			Check_GB_Compoments_NirCMDc()
+		Case $Button2
+			CLOSE()
+			Exit
+	EndSwitch
+WEnd
