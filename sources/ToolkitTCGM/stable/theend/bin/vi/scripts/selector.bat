@@ -5,7 +5,7 @@ title Self-check Plugin
 echo Self-check Plugin
 echo Build date: 14/07/2019
 echo Version: 3.5 RC2	
-echo Source: https://github.com/CuongZ/ToolkitTCGM_OfficialBuild	
+echo Source: https://github.com/CuongZ/ToolkitTCGM_Official	
 echo ---------------------------------   	
 if exist "bin/adb.exe" (	
 echo FOUND	
@@ -32,7 +32,16 @@ echo ---------------------------------
 echo NOT FOUND. Cannot run Toolkit if some file is missing. Please run Toolkit again to re-check files	
 echo ---------------------------------	
 pause	
-exit	
+exit
+if exist "bin/reinstall.bat" (	
+ echo FOUND	
+ echo ---------------------------------	
+) else (	
+echo NOT FOUND. Cannot run Toolkit if some file is missing. Please run Toolkit again to re-check files	
+echo ---------------------------------	
+pause
+exit
+)	
 )	
 if exist "bin/nircmdc.exe" (	
  echo FOUND	
@@ -131,9 +140,8 @@ cd bin/vi/scripts/
 cls	
 @ECHO off	
 echo Bang chon chuc nang - Toolkit cho Tencent Gaming Buddy	
-echo Ngay build: 10/09/2019  9:12PM	
-echo Ban co the tim thay ma nguon tai: https://github.com/CuongZ/ToolkitTCGM_OfficialBuild\
-echo Mot phien ban cap nhat quan trong da co san. Vui long tai o: https://github.com/CuongZ/ToolkitTCGM_Official/releases	
+echo Ngay build: 28/01/2020  7:30PM	
+echo Ban co the tim thay ma nguon tai: https://github.com/CuongZ/ToolkitTCGM_Official
 echo[	
 echo ---------------------------------------------	
 echo[	
@@ -141,7 +149,7 @@ echo (1): Trinh cai dat goi
 echo (2): Lam shortcut de vao app nhanh hon	
 echo (3): Kiem tra ten goi ( Package Name Check )	
 echo (4): Thoat	
-echo              (c) CuongZ	
+echo              (c) dtcu0ng	
 echo[	
 echo ---------------------------------------------	
 @ECHO OFF	
