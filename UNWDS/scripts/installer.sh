@@ -313,8 +313,8 @@ fi
 rm compile.sh
 rm PocketMine-MP.phar
 rm start.sh
-wget -q https://raw.githubusercontent.com/UnnamedNetwork/UNWDS/stable/start.sh && chmod +x ./start.sh
-wget -q --no-check-certificate --content-disposition https://github.com/UnnamedNetwork/UNWDS/releases/latest/download/UNWDS.phar
+curl -LJO https://raw.githubusercontent.com/UnnamedNetwork/UNWDS/stable/start.sh && chmod +x ./start.sh
+curl -LJO https://github.com/UnnamedNetwork/UNWDS/releases/latest/download/UNWDS.phar
 
 echo "[*] Everything done! Run ./start.sh to start UNWDS"
 exit 0
