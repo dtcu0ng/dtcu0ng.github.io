@@ -16,7 +16,8 @@
     </header>
     <main>
       <section>
-        <button id="w2d">Launch Developer menu</button>
+        <button id="open-dev-menu">Launch Developer menu</button>
+	<button id="priv-factory-reset">Launch Developer menu</button>
       </section>
     </main>
     <footer>
@@ -24,7 +25,7 @@
       <p>© <a href="https://bananahackers.net">BananaHackers</a> 2020 — present<br>credits to Luxferre and tbrrss</p>
     </footer>
     <script>
-      document.getElementById('w2d').addEventListener('click', function(e) {
+      document.getElementById('open-dev-menu').addEventListener('click', function(e) { // from w2d.bannanahackers.net
         if(window.MozActivity) {
           var act = new MozActivity({
             name: "configure",
@@ -43,5 +44,12 @@
           window.alert('Please open the page from the device itself!')
         }
       }, false)
+	document.getElementById('priv-factory-reset').addEventListener('click', function(e) {
+	if(navigator.mozPower && navigator.mozPower.factoryReset) {
+    if(confirm('Do you really want to perform privileged factory reset? All your data will be wiped!'))
+    navigator.mozPower.factoryReset('root')
+  } else {
+    alert('Error: factory reset capabilities not available') // from OnmiSD
+  }
     </script>
 </body></html>
