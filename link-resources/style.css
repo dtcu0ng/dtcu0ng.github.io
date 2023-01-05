@@ -1,0 +1,106 @@
+#heading {
+    text-align: center;
+}
+#links {
+    text-align: center;
+}
+#card {
+    text-align: center;
+    color: #e7e7e7;
+    padding: 7px;
+    margin-bottom: 7px;
+}
+footer {
+    padding: 3px;
+    width: 100%;
+    text-align: center;
+}
+a {
+    color: white;
+}
+body{
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    color: #e7e7e7;
+    font-family: "Inconsolata", sans-serif;
+}
+.avatar {
+    vertical-align: middle;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+  }
+.button {
+    font-family: "Inconsolata", sans-serif;
+    background-color: #3B5998;
+    border: none;
+    background-color: Transparent;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 40%;
+    border-radius: 20px;
+    font-weight: 500;
+  }
+  
+  .button1 {
+    background-color: Transparent;
+    color: white; 
+    border: 2px solid #3B5998;
+  }
+  
+  .button1:hover {
+    background-color: #5489eb;
+    color: white;
+  }
+  
+  .button2 {
+    background-color: Transparent;
+    color: white; 
+    border: 2px solid #008CBA;
+  }
+  
+  .button2:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+  
+  .button3 {
+    background-color: Transparent;
+    color: white; 
+    border: 2px solid #f44336;
+  }
+  
+  .button3:hover {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .button4 {
+    background-color: Transparent;
+    color: white;
+    border: 2px solid #e7e7e7;
+  }
+  
+  .button4:hover {
+    background-color: #e7e7e7;
+    color: black
+  }
+  
+  .button5 {
+    background-color: Transparent;
+    color: white;
+    border: 2px solid #C13584;
+  }
+  
+  .button5:hover {
+    background-color: #C13584;
+    color: white;
+  }
