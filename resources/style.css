@@ -97,3 +97,12 @@ footer {
   background-color: #C13584;
   color: white;
 }
+.button6 {
+  background-color: Transparent;
+  color: white; 
+  border: 2px solid #77da27;
+}
+.button6:hover {
+  background-color: #4e7017;
+  color: white;
+} 
